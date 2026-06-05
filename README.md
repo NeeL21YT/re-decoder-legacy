@@ -42,8 +42,6 @@ A multipurpose Discord bot built with **aoi.js**, featuring text encoders, decod
 
 * Custom Prefix System
 * Interactive Help Menu
-* Command Usage Tracking
-* Command Logging
 * Suggestions & Reports
 * Invite & Utility Commands
 
@@ -53,7 +51,9 @@ A multipurpose Discord bot built with **aoi.js**, featuring text encoders, decod
 * Discord.js Evaluation
 * Command Reloading
 * Status Management
-* User Tracking
+* Server Tracking
+* Command Usage Tracking
+* Command Logging
 * Blacklist System
 
 ---
