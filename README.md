@@ -1,183 +1,68 @@
-# Re-Decoder Legacy
+# Re-Decoder (Legacy Edition)
 
-A legacy Discord bot focused on text transformation, encoding/decoding, formatting, and utility commands.
+A multipurpose Discord bot built with **aoi.js**, featuring text encoders, decoders, code blocks, fonts, text styles, utility commands, and more.
 
-Re-Decoder was designed to provide a large collection of text manipulation tools in a single Discord bot, allowing users to transform, style, encode, decode, and format text directly from Discord. This repository preserves the legacy version of the project and serves as an archive of its original command system and structure.
-
----
-
-## Overview
-
-Re-Decoder Legacy contains a wide range of commands divided into categories including:
-
-* Text Styling
-* Font Conversion
-* Text Encoding & Decoding
-* Code Formatting
-* Utility Commands
-* Developer Tools
-* Special Commands
-
-The bot was built using Node.js and follows a modular command architecture, making it easy to add, remove, or modify commands.
+> This repository contains the original 2023 implementation of Re-Decoder before its migration to discord.js v14.
 
 ---
 
 ## Features
 
+### Text Utilities
+
+* Base64 Encoder / Decoder
+* Binary Encoder / Decoder
+* Morse Code Translator
+* Text Conversion Tools
+
 ### Text Styling
 
-Transform text using dozens of unique styles.
-
-Examples include:
-
-* Serif
-* Sans
-* Script
-* Typewriter
-* Comic
-* Manga
-* Saturn
-* Small Text
-* Upside Down
-* Double Struck
-* Fraktur
-* Emoji Text
-
-Over 50 styling variations are included.
-
----
-
-### Font Commands
-
-Convert standard text into alternative Unicode-based fonts.
-
-Examples:
-
-* Script Fonts
+* 50+ Text Style Variations
 * Decorative Fonts
-* Block Fonts
-* Fancy Unicode Fonts
-* Invisible Ink
-* Tiny Text
-* Stylized Character Sets
+* Fancy Unicode Text
+* Special Text Effects
+* Symbol & Character Utilities
+* Upside-Down Text
+* Typewriter Text
+* Script & Fraktur Fonts
 
----
+### Code Tools
 
-### Encoding & Decoding
+* Colored Code Blocks
+* Solarized Code Themes
+* Quote Formatting
+* Code Formatting Utilities
+* Developer-Friendly Text Generators
 
-Built-in tools for common encoding systems.
+### Server Features
 
-Supported formats include:
+* Custom Prefix System
+* Interactive Help Menu
+* Command Usage Tracking
+* Command Logging
+* Suggestions & Reports
+* Invite & Utility Commands
 
-* Base64
-* Binary
-* Morse Code
-* Text Conversion Utilities
+### Developer Tools
 
----
-
-### Code Formatting
-
-Create clean and readable code blocks directly within Discord.
-
-Available themes include:
-
-* Default
-* Solarized Blue
-* Solarized Cyan
-* Solarized Green
-* Solarized Orange
-* Solarized Red
-* Solarized Yellow
-* Quote Blocks
-
----
-
-### Utility Commands
-
-General-purpose commands for server management and information.
-
-Examples:
-
-* Help
-* Ping
-* Invite
-* Credits
-* Server Prefix Management
-* Privacy Policy
-* Reviews
-* Suggestions
-* Reporting
-
----
-
-### Developer Commands
-
-Administrative and development tools.
-
-Examples:
-
-* Eval
-* Discord.js Eval
-* Reload Commands
+* Eval Commands
+* Discord.js Evaluation
+* Command Reloading
 * Status Management
 * User Tracking
-* Blacklist Management
+* Blacklist System
 
 ---
 
-## Installation
+## Statistics
 
-Clone the repository:
+* 100+ Commands
+* Multiple Command Categories
+* Prefix-Based Command System
+* Built with aoi.js
+* Originally Developed in 2023
 
-```bash
-git clone https://github.com/NeeL21YT/re-decoder-legacy.git
-cd re-decoder-legacy
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Configure the bot and required settings.
-
-Start the bot:
-
-```bash
-node index.js
-```
-
----
-
-## Project Structure
-
-```text
-Re-Decoder Legacy
-│
-├── commands/
-│   ├── Code/
-│   ├── CodeBlock/
-│   ├── Dev/
-│   ├── Fonts/
-│   ├── Misc/
-│   ├── Special/
-│   └── Style/
-│
-├── database/
-│   └── main/
-│
-├── db backup/
-│
-├── index.js
-├── package.json
-└── README.md
-```
-
----
-
-## Command Categories
+### Command Categories
 
 | Category  | Description                          |
 | --------- | ------------------------------------ |
@@ -191,27 +76,61 @@ Re-Decoder Legacy
 
 ---
 
-## Legacy Status
+## Project Structure
 
-This repository represents the legacy version of Re-Decoder.
+```text
+commands/
+├── Code/
+├── CodeBlock/
+├── Dev/
+├── Fonts/
+├── Misc/
+├── Special/
+└── Style/
 
-The project is preserved for:
+database/
+└── main/
 
-* Historical reference
-* Educational purposes
-* Command migration
-* Future redevelopment
-* Community archives
+db backup/
 
-Features and code may reflect older Discord.js practices and project structures.
+index.js
+package.json
+```
 
 ---
 
-## Contributing
+## Getting Started
 
-This repository is primarily maintained as an archive.
+Install dependencies:
 
-Bug fixes, documentation improvements, and preservation efforts are welcome.
+```bash
+npm install
+npm install aoi.js@5.1.2
+```
+
+Start the bot:
+
+```bash
+node index.js
+```
+
+> Database files and backups are not included in this repository.
+
+---
+
+## Legacy Notice
+
+This project is no longer under active development and is preserved as the original aoi.js version of Re-Decoder.
+
+The modern version has been migrated to discord.js v14, while this repository remains available for:
+
+* Historical reference
+* Learning purposes
+* Source code preservation
+* Archival reasons
+* Legacy command documentation
+
+Some code may reflect older Discord and aoi.js development practices from the time of its creation.
 
 ---
 
@@ -219,18 +138,14 @@ Bug fixes, documentation improvements, and preservation efforts are welcome.
 
 Created and maintained by **NeeL21YT**.
 
-Special thanks to everyone who used, tested, and supported Re-Decoder throughout its development.
+Thanks to everyone who used, tested, and supported Re-Decoder throughout its development.
 
 ---
 
 ## License
 
-This project is provided for educational and archival purposes.
-
-Please respect the original authorship and provide proper attribution when using portions of the code.
+MIT License
 
 ---
 
-### Archive Notice
-
-Re-Decoder Legacy is preserved as a snapshot of an earlier generation of the project. While active development may continue elsewhere, this repository remains available as a historical record of the bot's original implementation and command system.
+Made with ❤️ as a learning project and Discord utility bot.
