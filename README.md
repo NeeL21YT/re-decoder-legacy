@@ -68,15 +68,15 @@ A multipurpose Discord bot built with **aoi.js**, featuring text encoders, decod
 
 ### Command Categories
 
-| Category  | Description                          |
-| --------- | ------------------------------------ |
-| Fonts     | Unicode font conversion commands     |
-| Style     | Text styling and decoration commands |
-| Code      | Encoding and decoding tools          |
-| CodeBlock | Code formatting commands             |
-| Misc      | Utility and information commands     |
-| Dev       | Developer-only functionality         |
-| Special   | Additional custom commands           |
+| Category  | Description                                         |
+| --------- | --------------------------------------------------- |
+| Fonts     | Unicode font conversion and character replacement   |
+| Style     | Decorative text styles and visual text effects      |
+| Code      | Text encoders, decoders, and conversion utilities   |
+| CodeBlock | Code block generators and formatting tools          |
+| Misc      | General utility and information commands            |
+| Dev       | Developer and maintenance commands                  |
+| Special   | Experimental and miscellaneous text transformations |
 
 ---
 
