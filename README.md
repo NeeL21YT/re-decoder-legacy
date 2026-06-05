@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://cdn.discordapp.com/avatars/801377420112035840/f097f9c452b89dbc2d2f51242b687d01.png?size=2048" alt="Re-Decoder Avatar" width="180">
+</p>
+
 # Re-Decoder (Legacy Edition)
 
 A multipurpose Discord bot built with **aoi.js**, featuring text encoders, decoders, code blocks, fonts, text styles, utility commands, and more.
