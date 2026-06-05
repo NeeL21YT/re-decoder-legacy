@@ -106,6 +106,8 @@ Install dependencies:
 ```bash
 npm install
 npm install aoi.js@5.1.2
+npm install discord-tts@1.2.0
+npm install table@6.8.0
 ```
 
 Start the bot:
