@@ -1,0 +1,20 @@
+module.exports = ({
+  name: "block",
+  code: `
+$setGlobalUserVar[usercmdsused;$sum[$getGlobalUserVar[usercmdsused];1];$authorID]
+$setVar[cmdsused;$sum[$getVar[cmdsused];1]]
+> Requested by **$username#$discriminator[$authorID]**
+
+$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message;Z;Z⃠];Y;Y⃠];X;X⃠];W;W⃠];V;];U;U⃠];T;T⃠];S;S⃠];R;R⃠];Q;Q⃠];P;P⃠];O;O⃠];Ñ;Ñ];N;N⃠];M;M⃠];L;L⃠];K;K⃠];J;J⃠];I;I⃠];H;H⃠];G;G⃠];F;F⃠];E;E⃠];D;D⃠];C;C⃠];B;B⃠];A;A⃠];z;z⃠];y;y⃠];x;x⃠];w;w⃠];v;v⃠];u;u⃠];t;t⃠];s;s⃠];r;r⃠];q;q⃠];p;p⃠];o;o⃠];ñ;ñ];n;n⃠];m;m⃠];l;l⃠];k;k⃠];j;j⃠];i;i⃠];h;h⃠];g;g⃠];f;f⃠];e;e⃠];d;d⃠];c;c⃠];b;b⃠];a;a⃠]
+$argsCheck[>0;Write something to convert to **\`$commandName\`** text.] 
+
+$onlyIf[$getGlobalUserVar[Blacklist;$authorID]==false;{newEmbed:{title:Banned}{description:🔨 **You seemed to be blacklisted!** Contact the developer **$userTag[$botownerid]** for more information}{color:BLACK}{timestamp}{delete:5s}}]
+
+$channelSendMessage[$getVar[cmdslogs];{newEmbed:{title:Commands Logs}
+{description:( **$userTag[$authorID]** | \`$authorID\` ) used a command!}
+{field:Command Name:\`$commandName\`:no}
+{field:Server:$serverName[$guildID] ($guildID):no}
+{field:Total Commands Used by $userTag[$authorID]:\`$numberSeparator[$sum[$getGlobalUserVar[usercmdsused];1];,]\`:no}
+{footer:$getVar[botfooter]}{color:$randomText[ORANGE;WHITE]}}]
+
+`})
